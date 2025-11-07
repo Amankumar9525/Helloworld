@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>helloworld</title>
+    <style>
+body{
+     background-image: linear-gradient(45deg, red,blueviolet); 
+      background-color: blueviolet;  
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    /* width:100 ; */
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /* background-color: aqua; */
+    align-items: center;
+
+
+
+}
+.navlinks{
+
+    list-style: none;
+    display: flex;
+    color: black;
+    /* font-size: 15px; */
+    gap: 20px;
+}
+
+.navlinks a{
+    /* text-decoration: none; */
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+
+}
+.nav {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: cursive;
+
+
+
+}
+ 
+
+
+  .container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+ }
+.leftside{
+    display: flex;
+    flex-direction: column;
+     text-align: center; 
+    text-align: center;
+    gap: 30px;
+    width: 50%;
+}
+.headingtext{
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 30px;
+    color: yellow;
+}
+.headingpara{
+    color: white;
+} 
+/* Container */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    gap: 30px;
+  }
+
+  /* Left text section */
+  .about-left {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .about-left h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5rem;
+    color: #c19a6b;
+    text-shadow: 2px 2px 5px #000;
+    border-bottom: 2px solid #c19a6b;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .about-left p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+
+  /* Right image section */
+  .about-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-right img {
+    width: 100%;
+    max-width: 350px;
+    border: 4px solid #c19a6b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(193,154,107,0.7);
+    transition: transform 0.4s ease;
+  }
+
+  .about-right img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Magical hover animation for title */
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #c19a6b, 0 0 10px #c19a6b; }
+    50% { text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; }
+    100% { text-shadow: 0 0 5px #c19a6b, 0 0 10px #c19a6b; }
+  }
+
+  .about-left h2:hover {
+    animation: glow 1.5s infinite alternate;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-left h2 {
+      font-size: 2rem;
+    }
+
+    .about-left p {
+      font-size: 1rem;
+    }
+
+    .about-right img {
+      max-width: 250px;
+    }}
+/* Container */
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    gap: 30px;
+  }
+
+  /* Left text section */
+  .serviceleft {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .serviceleft h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5rem;
+    color: #c19a6b;
+    text-shadow: 2px 2px 5px #000;
+    border-bottom: 2px solid #c19a6b;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .serviceleft p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+  }
+
+  /* Right image section */
+  .serviceright {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .serviceright img {
+    width: 100%;
+    max-width: 350px;
+    border: 4px solid #c19a6b;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(193,154,107,0.7);
+    transition: transform 0.4s ease;
+  }
+
+  .serviceright img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Magical hover animation for title */
+  @keyframes glow {
+    0% { text-shadow: 0 0 5px #c19a6b, 0 0 10px #c19a6b; }
+    50% { text-shadow: 0 0 15px #ffcc00, 0 0 30px #ffcc00; }
+    100% { text-shadow: 0 0 5px #c19a6b, 0 0 10px #c19a6b; }
+  }
+
+  .serviceleft h2:hover {
+    animation: glow 1.5s infinite alternate;
+  }
+
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .servicesection {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .serviceleft h2 {
+      font-size: 2rem;
+    }
+
+    .serviceleft p {
+      font-size: 1rem;
+    }
+
+    .serviceright img {
+      max-width: 250px;
+    }}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+<a href=""><img src="baby-kids-retro-svg-design-file_958141-764.jpg" alt="" style="width: 2cm;height: 1.5cm; border-radius: 10px;"></a>
+<ul class="navlinks">
+    <li><a href="index6.html">Home</a></li>
+    <li><a href="contact.html">Contact us</a></li>
+    <li><a href=" #about ">About us</a></li>
+    <li><a href="#service">Service</a></li>
+    <!-- <button class="nav">Click Me</button> -->
+
+</ul>
+<div class="btn">
+    <button class="nav"><a href="singin.html">signin</a></button>
+    <button class="nav"><a href="login.html">login</a></button>
+</div>
+
+        
+    </nav>
+    <hr>
+
+<div class="container">
+<div class="leftside">
+    <div class="headingtext">
+        <h1>hello world</h1>
+    </div>
+    <div class="headingpara">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ratione porro nisi ad, beatae vitae facilis nobis.  Nostrum commodi quos totam a necessitatibus, aliquam nihil exercitationem eveniet hic provident et.</p>
+    </div>
+
+
+</div>
+<div class="rightside"><img src="baby-kids-retro-svg-design-file_958141-764.jpg" alt="" style="width: 5cm;"></div>
+
+</div>
+<section class="about-section" id="about">
+  <div class="about-left">
+    <h2>About Me</h2>
+    <p>
+      Greetings, traveler! I’m <strong>Harry Evans</strong> — a curious wizard 
+      who loves exploring the enchanted realms of magic, creativity, and knowledge.  
+      Whether it’s crafting spells in code or conjuring art with pixels,  
+      I believe every creation carries a spark of wonder.  
+      When I’m not immersed in digital sorcery, you’ll find me with a butterbeer  
+      in hand, dreaming of my next adventure beyond the castle walls.
+    </p>
+  </div>
+  <div class="about-right">
+    <img src="baby-kids-retro-svg-design-file_958141-764.jpg" alt="Wizard Portrait">
+  </div>
+</section>
+<section class="service" id="service">
+<div class="serviceleft">
+<h2>Service</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum omnis fuga soluta voluptate. <br> Facere amet atque magnam quasi? <br> Tempora officia corporis voluptates iste non quidem incidunt eveniet expedita modi aliquid?
+
+</p>
+
+</div>
+<div class="serviceright">
+    <img src="baby-kids-retro-svg-design-file_958141-764.jpg" alt="Wizard Portrait">
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+   </body>
+</html>
